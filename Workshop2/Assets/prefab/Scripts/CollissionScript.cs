@@ -17,6 +17,7 @@ public class CollissionScript : MonoBehaviour
 
 	if (col.gameObject.name == "Scissors") 
 	{
+		print("collision124");
 		this.scissors = col.gameObject;
 		this.scissors.GetComponent<ScissorsMovement>().pickedUp = true;
 	}
