@@ -9,6 +9,7 @@ public class CollissionScript : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
+	print(col.gameObject.name);
 	if (col.gameObject.name == "Lightsource") 
 	{
 		this.lightsource = col.gameObject;
